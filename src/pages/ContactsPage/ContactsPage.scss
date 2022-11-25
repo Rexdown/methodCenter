@@ -1,0 +1,167 @@
+.contactsPage {
+    &__adress {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 345px;
+        margin-bottom: 70px;
+
+        &__content {
+            width: 44%;
+
+            &-title {
+                font-family: 'Roboto Slab';
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 48px;
+                color: #333333;
+                margin-bottom: 30px;
+            }
+            &-text {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                color: #333333;
+                margin-bottom: 50px;
+            }
+            &__info {
+                display: flex;
+                margin-bottom: 20px;
+
+                &-icon {
+                    margin-right: 15px;
+                }
+                &-text {
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #333333;
+                }
+            }
+        }
+    }
+
+    &__personal {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 345px;
+        margin-bottom: 70px;
+
+        &-deportament {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 345px;
+            margin-bottom: 100px;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 330px;
+            height: 155px;
+            padding: 30px;
+            border: 1px solid #BDBDBD;
+            border-radius: 20px;
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &-name {
+                font-weight: 600;
+                font-size: 16px;
+                color: #333333;
+                margin-bottom: 15px;
+            }
+            &-post {
+                font-weight: 500;
+                font-size: 14px;
+                color: #333333;
+            }
+            &__info {
+                display: flex;
+
+                &:first-child {
+                    margin-bottom: 15px;
+                }
+
+                &-icon {
+                    margin-right: 15px;
+                }
+                &-text {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #666666;
+                }
+            }
+        }
+
+        &__department {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 330px;
+            height: 230px;
+            padding: 30px;
+            border: 1px solid #BDBDBD;
+            border-radius: 20px;
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &-title {
+                position: relative;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 21px;
+                color: #AB4A46;
+                margin-bottom: 30px;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 90px;
+                    height: 1px;
+                    left: 0;
+                    bottom: -10px;
+                    background: #AB4A46;
+                }
+            }
+            &-name {
+                font-weight: 600;
+                font-size: 16px;
+                color: #333333;
+                margin-bottom: 15px;
+            }
+            &-post {
+                font-weight: 500;
+                font-size: 14px;
+                color: #333333;
+            }
+            &__info {
+                display: flex;
+
+                &:first-child {
+                    margin-bottom: 15px;
+                }
+
+                &-icon {
+                    margin-right: 15px;
+                }
+                &-text {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #666666;
+                }
+            }
+        }
+    }
+}
+
+iframe {
+    border-radius: 20px;
+}

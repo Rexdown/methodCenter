@@ -1,0 +1,72 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    margin: 0 345px;
+
+    &__left {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        margin: auto 0;
+
+        &-eye {
+            margin: auto 0;
+        }
+        &__search {
+            display: flex;
+            margin: auto 0;
+            border-bottom: 1px solid #DDDDDD;
+
+            &-input {
+                width: 285px;
+                height: 40px;
+                margin: auto 0;
+                margin-right: 10px;
+
+
+                font-size: 14px;
+                line-height: 17px;
+                color: #333;
+
+                &::-webkit-input-placeholder {
+                    color: #999999;
+                }
+                &:-moz-placeholder {
+                    color: #999999;
+                }
+            }
+            &-magnifier {
+                margin: auto 0;
+            }
+        }
+    }
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        margin: auto 0;
+
+        &__contact {
+            display: flex;
+            margin: auto 0;
+
+            &-icon {
+                margin: auto 0;
+                margin-right: 13px;
+            }
+            &-post {
+                margin: auto 0;
+                font-weight: 400;
+                font-size: 14px;
+                color: #333333;
+            }
+            &-phone {
+                font-family: 'Roboto Slab';
+                font-weight: 700;
+                font-size: 18px;
+                color: #333333;
+            }
+        }
+    }
+}

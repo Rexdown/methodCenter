@@ -1,0 +1,181 @@
+.modal {
+    position: fixed;
+    display: flex;
+
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    &-active {
+        position: fixed;
+        display: flex;
+    
+        top: 0;
+        z-index: 10;
+        opacity: 1;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+        opacity: 1;
+        margin: auto;
+        width: 390px;
+        height: 675px;
+        border-radius: 20px;
+        background: #FFFFFF;
+
+        &-close {
+            width: 17px;
+            height: 17px;
+            cursor: pointer;
+            margin-top: 17px;
+            margin-left: auto;
+            margin-right: 17px;
+        }
+        &-title {
+            margin-left: 30px;
+            font-weight: 600;
+            font-size: 20px;
+            color: #333333;
+            margin-bottom: 25px;
+        }
+        &__form {
+            margin-left: 30px;
+            margin-bottom: 20px;
+
+            &-text {
+                font-weight: 500;
+                font-size: 14px;
+                color: #333333;
+                margin-bottom: 10px;
+            }
+            &-input {
+                width: 300px;
+                height: 45px;
+                padding: 0 15px;
+                border-radius: 5px;
+                border: 1px solid #DDDDDD;
+            }
+            &-message {
+                width: 300px;
+                height: 100px;
+                padding: 15px;
+                resize: none; 
+                border-radius: 5px;
+                border: 1px solid #DDDDDD;
+
+                outline: none;
+                font: inherit;
+            }
+        }
+
+        &__checkbox {
+            display: flex;
+            margin-left: 30px;
+            margin-bottom: 20px;
+
+            &-icon {
+                display: flex;
+                width: 20px;
+                height: 20px;
+                margin: auto 0;
+                cursor: pointer;
+                margin-right: 15px;
+                border-radius: 2px;
+                border: 1px solid #AB4A46;
+            }
+            &-check {
+                margin: auto;
+                width: 12px;
+                height: 12px;
+            }
+            &__text {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #333333;
+
+                &-link {
+                    color: #AB4A46;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &-submit {
+            width: 330px;
+            height: 45px;
+            border: 0px;
+            opacity: 0.5;
+            margin: 0 auto;
+            border-radius: 5px;
+            background: #AB4A46;
+
+            font-weight: 500;
+            font-size: 14px;
+            color: #FFFFFF;
+            pointer-events: none;
+        }
+
+        &__complete {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            &-title {
+                font-weight: 600;
+                font-size: 20px;
+                color: #333333;
+                margin: 0 auto;
+                margin-top: 265px;
+                margin-bottom: 20px;
+            }
+            &-text {
+                font-weight: 500;
+                font-size: 14px;
+                color: #666666;
+                margin: 0 auto;
+                margin-bottom: 265px;
+            }
+        }
+    }
+}
+
+.active-checkbox {
+    background: #AB4A46;
+}
+
+.activeButton {
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
+    background: #AB4A46;
+    transition: 0.22s;
+
+    &:hover {
+        background: #943b38;
+        transition: 0.22s;
+    }
+}
+
+.completeButton {
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
+    background: #AB4A46;
+    margin: 0 auto;
+    transition: 0.22s;
+
+    &:hover {
+        background: #943b38;
+        transition: 0.22s;
+    }
+}

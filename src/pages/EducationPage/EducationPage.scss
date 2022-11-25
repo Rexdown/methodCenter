@@ -1,0 +1,208 @@
+.educationPage {
+    margin-bottom: 100px;
+    
+    &-content {
+        display: flex;
+        flex-direction: column;
+        margin: 0 345px;
+    }
+    &-title {
+        font-family: 'Roboto Slab';
+        font-weight: 700;
+        font-size: 32px;
+        color: #333333;
+        margin-bottom: 40px;
+    }
+    &-subtitle {
+        font-weight: 600;
+        font-size: 20px;
+        color: #333333;
+        margin-bottom: 40px;
+    }
+    &-text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #333333;
+        margin-bottom: 40px;
+    }
+
+    // &__table-wrapper {
+    //     border-radius: 15px 15px 0 0;
+    //     padding: 0px 16px 0 16px;
+    //     background-color: #AB4A46;
+    // }
+
+    &__table {
+        border-spacing: 0px;
+        border: 0px solid #BDBDBD;
+        border-radius: 15px;
+
+        &-mainheader {
+            & th {
+                border: 1px solid #9A423E;
+                border-radius: 15px 15px 0 0;
+                height: 40px;
+                padding: 0 5px;
+
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 15px;
+                padding: 0;
+                color: #FFFFFF;
+            }
+        }
+
+        &-header {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            padding: 0;
+            color: #FFFFFF;
+            height: 50px;
+        }
+
+        &-subheader {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            color: #FFFFFF;
+            padding: 0;
+            height: 50px;
+        }
+
+        & thead {
+            background: #AB4A46;
+            border-radius: 15px 15px 0 0;
+            height: 80px;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center;
+            color: #FFFFFF;
+
+            & th {
+                border: 1px solid #9A423E;
+                padding: 8px;
+            }
+        }
+
+        & tbody {
+            background: #fff;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #333333;
+
+            & td {
+                vertical-align: top; 
+                border: 1px solid #BDBDBD;
+                padding: 15px 5px;
+
+                &:first-child {
+                    border-left: 1.5px solid #BDBDBD;
+                }
+                &:last-child {
+                    border-right: 1.5px solid #BDBDBD;
+                }
+
+                & img {
+                    width: 30px;
+                    cursor: pointer;
+                }
+            }
+
+            & tr:last-child {
+                & td {
+                    border-bottom: 1.5px solid #BDBDBD;
+                }
+
+                & .lastRow:first-child {
+                    border-radius: 0 0 0 15px;
+                }
+                & .lastRow:last-child {
+                    border-radius: 0 0 15px 0;
+                }
+            }
+        }
+
+        &__column {
+            &-1 {
+                width: 187px;
+            }
+            &-2 {
+                width: 105px;
+                text-align: center;
+            }
+            &-3 {
+                width: 95px;
+                text-align: center;
+            }
+            &-4 {
+                width: 95px;
+                text-align: center;
+            }
+            &-5 {
+                width: 116px;
+                text-align: center;
+            }
+            &-6 {
+                width: 124px;
+                text-align: center;
+            }
+            &-7 {
+                width: 95px;
+                text-align: center;
+            }
+            &-8 {
+                width: 116px;
+                text-align: center;
+            }
+            &-9 {
+                width: 176px;
+                text-align: center;
+            }
+            &-10 {
+                width: 121px;
+            }
+
+            &-one {
+                width: 420px;
+                height: 25px;
+            }
+            &-two {
+                width: 150px;
+                height: 25px;
+                text-align: center;
+            }
+            &-three {
+                width: 95px;
+                height: 25px;
+                text-align: center;
+            }
+            &-four {
+                width: 222px;
+                height: 25px;
+                text-align: center;
+            }
+            &-five {
+                width: 222px;
+                height: 25px;
+                text-align: center;
+            }
+            &-six {
+                width: 120px;
+                height: 25px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.lastTable {
+    margin-bottom: 60px;
+}
+
+.realLastTable {
+    margin-bottom: 70px;
+}

@@ -1,0 +1,181 @@
+.managementPage {
+    &-content {
+        display: flex;
+        flex-direction: column;
+        margin: 0 345px;
+    }
+    &-title {
+        font-family: 'Roboto Slab';
+        font-weight: 700;
+        font-size: 32px;
+        color: #333333;
+        margin-bottom: 40px;
+    }
+    &-subtitle {
+        font-weight: 600;
+        font-size: 20px;
+        color: #333333;
+        margin-bottom: 30px;
+    }
+    &-text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #333333;
+        margin-bottom: 40px;
+    }
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    &__personal {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 330px;
+        height: 350px;
+        padding: 30px;
+        border: 1px solid #BDBDBD;
+        border-radius: 20px;
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &-ava {
+            margin-bottom: 25px;
+        }
+        &-name {
+            font-weight: 600;
+            font-size: 16px;
+            color: #333333;
+            margin-bottom: 15px;
+        }
+        &-post {
+            font-weight: 500;
+            font-size: 14px;
+            color: #333333;
+        }
+        &__info {
+            display: flex;
+
+            &:first-child {
+                margin-bottom: 15px;
+            }
+
+            &-icon {
+                margin-right: 15px;
+            }
+            &-text {
+                font-weight: 400;
+                font-size: 14px;
+                color: #666666;
+            }
+        }
+    }
+
+    // &__table-wrapper {
+    //     border-radius: 15px 15px 0 0;
+    //     padding: 0px 16px 0 16px;
+    //     background-color: #AB4A46;
+    // }
+
+    &__table {
+        margin-bottom: 120px;
+        border-spacing: 0px;
+        border: 0px solid #BDBDBD;
+        border-radius: 15px;
+
+        & thead {
+            background: #AB4A46;
+            border-radius: 15px 15px 0 0;
+            height: 80px;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center;
+            color: #FFFFFF;
+
+            & th {
+                border: 1px solid #9A423E;
+                padding: 0 5px;
+    
+                &:first-child {
+                    border-left: 1px solid #AB4A46;
+                    border-radius: 15px 0 0 0;
+                }
+                &:last-child {
+                    border-right: 1px solid #AB4A46;
+                    border-radius: 0 15px 0 0;
+                }
+            }
+        }
+
+        & tbody {
+            background: #fff;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #333333;
+
+            & td {
+                vertical-align: top; 
+                border: 1px solid #BDBDBD;
+                padding: 15px 5px;
+
+                &:first-child {
+                    border-left: 1.5px solid #BDBDBD;
+                }
+                &:last-child {
+                    border-right: 1.5px solid #BDBDBD;
+                }
+            }
+
+            & tr:last-child {
+                & td {
+                    border-bottom: 1.5px solid #BDBDBD;
+                }
+
+                & td:first-child {
+                    border-radius: 0 0 0 15px;
+                }
+                & td:last-child {
+                    border-radius: 0 0 15px 0;
+                }
+            }
+        }
+
+        &__column {
+            &-1 {
+                width: 20px
+            }
+            &-2 {
+                width: 132px
+            }
+            &-3 {
+                width: 165px
+            }
+            &-4 {
+                width: 167px
+            }
+            &-5 {
+                width: 70px
+            }
+            &-6 {
+                width: 110px
+            }
+            &-7 {
+                width: 325px
+            }
+            &-8 {
+                width: 116px
+            }
+            &-9 {
+                width: 95px
+            }
+        }
+    }
+}

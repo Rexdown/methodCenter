@@ -1,0 +1,51 @@
+.activityPage {
+    margin-bottom: 100px;
+    
+    &-content {
+        display: flex;
+        flex-direction: column;
+        margin: 0 345px;
+    }
+    &-title {
+        font-family: 'Roboto Slab';
+        font-weight: 700;
+        font-size: 32px;
+        color: #333333;
+        margin-bottom: 50px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__item {
+            display: flex;
+            width: 390px;
+            height: 85px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            border: 1px solid #BDBDBD;
+
+            &:hover {
+                transition: 0.33s;
+                border: 1px solid #AB4A46;
+                box-shadow: 0px 4px 10px rgba(81, 3, 0, 0.15);
+            }
+            &:hover &-text {
+                color: #AB4A46;
+                transition: 0.33s;
+            }
+
+            &-img {
+                margin: auto 30px;
+            }
+            &-text {
+                font-weight: 500;
+                font-size: 14px;
+                color: #333333;
+                margin: auto 0;
+            }
+        }
+    }
+}

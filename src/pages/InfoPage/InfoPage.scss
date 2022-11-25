@@ -1,0 +1,16 @@
+.infoPage {
+    margin-bottom: 100px;
+    
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin: 0 345px;
+    }
+    &-title {
+        font-family: 'Roboto Slab';
+        font-weight: 700;
+        font-size: 32px;
+        color: #333333;
+        margin-bottom: 50px;
+    }
+}
